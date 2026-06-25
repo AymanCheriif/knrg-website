@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { aventa } from "./fonts";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={aventa.variable}>
       <body>
         <Header />
         {children}
